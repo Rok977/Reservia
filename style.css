@@ -20,13 +20,33 @@ body
     background-color: white;
     width: 1440px;
     height: 1884px; 
-    margin-left:auto;
-    margin-right:auto;
+
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content:center ;
+    margin-left:15px;
+    align-items:center;
+    position:absolute;
+    left:2%;
+    
 }
 
+main
+{
+display:flex;
+justify-content: center;
+flex-direction:column;
+}
 nav img
 {
-   
+
+}
+
+header
+{
+
+width:100%;
 }
 
 nav a 
@@ -49,51 +69,106 @@ h5
 }
 section img
 {
-    max-width: 250px;
+    width: 250px;
     max-height: 200px;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    ;
+}
+.Gauche
+{
+ width:50%;
+display:flex;
 }
 
-
-section div 
+.Gauche img
 {
- padding: 15 px;
+    display:flex
+}
 
+.droite 
+{
+width:50%;
+display:flex;
+}
+
+.bas img 
+{
+     width: 250px;
+    max-height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(150, 150, 150);
+    background-color:black;
+}
+figure
+{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    
+}
+.bas .Grand
+{
+    max-width: 250px;
+    max-height: 500px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(150, 150, 150);
+   
+}
+.bas
+{
+     display:flex;
+    width:100%;
+    height:50%;
+ 
+}
+.bas div 
+{
+    
 }
 
 section
 {
+display:flex;
 width:100%;
-flex-wrap:wrap
+flex-wrap:wrap;
+margin-top:5px;
+height:50%;
+
 }
 
-article 
+section article 
 {
     background-color: #F2F2F2;
-   width:60%;
+   flex:2;
     float:left;
-    padding:15px;
+   height:100%;
+   width:100%;
     border-radius:15px;
   
 }
 
-aside
+section aside
 {
     flex-direction: row;
     background-color: #F2F2F2;
     
-    float:right;
-    width:30%;
+    margin-left:35px;
+    flex:1;
     padding:15px;
     border-radius:15px;
    
 }
 
+div img
+{
+Height:500px;
+}
 footer
 {
     margin-top:25px;
     background-color: #F2F2F2;
     display:block;
     margin-top:auto;
+    width:100%;
 }
