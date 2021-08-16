@@ -24,6 +24,17 @@ body
     margin-right:auto;
 }
 
+nav img
+{
+   
+}
+
+nav a 
+{
+    Float:right;
+    margin:10px;
+}
+
 h3
 {
    
@@ -43,6 +54,7 @@ section img
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
 }
+
 
 section
 {
