@@ -36,11 +36,12 @@ h5
 {
     font-family: Raleway-Thin;
 }
-img
+section img
 {
     max-width: 250px;
     max-height: 200px;
     border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
 }
 
 section
@@ -56,6 +57,7 @@ article
     float:left;
     padding:15px;
     border-radius:15px;
+  
 }
 
 aside
@@ -67,6 +69,7 @@ aside
     width:30%;
     padding:15px;
     border-radius:15px;
+   
 }
 
 footer
