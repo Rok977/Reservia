@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <title>Reservia</title>
     </head>
 
@@ -17,38 +19,55 @@
                 </nav>
             </header>
             <main>
-                <h3>Trouvez votre hébergment pour des vacances de rêve</h2>
+                <h3>Trouvez votre hébergment pour des vacances de rêve</h3>
                 <h5>En plein centre ville ou en pleine nature.</h5>
-                <p>
-                <input type="search" alt=/>
-                
-                <select name="Filtres economique" id="filtres">
-                     <option value="Economique">Economique </option>
-                </select>
-                <select name="Filtres Familial " id="filtres">
-                        <option value="Familial">Familial</option>
-                </select>
-                <select name="Filtres Romantique  " id="filtres">
-                    <option value="Familial">Romantique</option>
-                </select>
-                <select name="Filtres Animaux" id="filtres">
-                            <option value="Economique">Animaux Autorisés </option>
-                    </select>
-                </p>
-                 </select>
-                 <img src=""> 
+                <div class="icon">
+                    
+                </div>
+                <div class="search">
+                <i class="fas fa-map-marker-alt"></i><input type="search" id="recherche" name="recherche" placeholder="Marseille/France" required/><button>Recherche</button>
+                </div>
+                <div class="filtres">
+                    <h4>Filtres</h4>
+                            <div class="iconfiltre margefiltre">
+                                <i class="fas fa-money-bill-wave"></i><p> Economique</p>
+                            </div>
+                            <div class="iconfiltre">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <p> Economique</p>
+                            </div>
+                            <div class="iconfiltre">
+                                <i class="fas fa-money-bill-wave"></i> <p> Economique</p> </div>
+                            <div class="iconfiltre">
+                                <i class="fas fa-money-bill-wave"></i><p> Economique</p>
+                            </div>
+                </div>
+               
+               
                 <section class="sectionhaut">
                     <article>
                         <h3>Hébergements à Marseille</h3>
                         <div class="haut">
-                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imagehaut">
-                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imagehaut">
-                        <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"class="imagehaut">
+                            <div>
+                            <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imagehaut">
+                            </div>
+                            <div>
+                            <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imagehaut">
+                            </div>
+                            <div>
+                            <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"class="imagehaut">
+                            </div>
                         </div>
                         <div class="bas">
+                            <div class="Bulleimages">
                         <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imagebas">
+                            </div>
+                            <div class="Bulleimages">
                         <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imagebas">
+                        </div>
+                        <div class="Bulleimages">
                         <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imagebas">
+                        </div>
                         </div>
                         <h5>Affichez plus</h5>
                     </article>
@@ -76,9 +95,9 @@
                         </figure>
                     </div>
                      <div class="droite">
-                         <figure>
+                    
                         <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"class="Grand">
-                        </figure>
+                      
                         <figure>
                         <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
                         <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
