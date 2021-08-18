@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Raleway-Bold';
-    src: url('static/Raleway-Bold.ttf')
+    src: url('static/Raleway-ExtraBold.ttf')
 }
 
 @font-face {
@@ -29,6 +29,7 @@ body
     ". main main main ."
     ". main main main ."
     ". footer footer footer . ";
+    margin-bottom:0px;
 
 }
 
@@ -74,6 +75,7 @@ border-style:solid;
     flex-direction:row;
     align-items:center;
     margin-top:10px;
+    font-family: 'Raleway','700';
  
 }
 
@@ -136,8 +138,8 @@ header
 {
 grid-area:header;
 width:100%;
-  font-family: 'Raleway-Regular';
-}
+font-family: 'Raleway', '300';
+}s
 nav img
 {
 padding-top:18px;
@@ -147,10 +149,6 @@ nav a
 {
     Float:right;
     padding:35px;
-    
-    margin-left:30px;
-    margin-right:30px;
-   
     text-decoration:none;
     color:gray;
 }
@@ -175,20 +173,28 @@ nav a:active
     color:#0065FC;
 }
 
-h3
+#titreart
+{
+     margin-left:40px;
+     margin-top:40px;
+     margin-bottom:2px;
+}
+
+
+h3 
 {
    
-    color:black;
-    font-family: 'Raleway-Bold';
+    color:#313131;
+    font-family: 'Raleway', '900';
     grid-area:h3;
-    margin: 1px;
+    margin-top:20px;
    
 }
 
 h4
 {
     color:black;
-    font-family: 'Raleway-Bold';
+    font-family: 'Raleway', '700';
     margin-right:20px;
 }
 h5
@@ -202,10 +208,15 @@ h5
 {
     display:flex;
     flex-direction:row;
-    align-items:center;
-    margin:auto;
+    height:190px;
+    margin-top:20px;
+    justify-content: center;
 }
 
+.titregras
+{
+    margin-left:20xp;
+}
 .haut div
 {
 background-color:white;
@@ -214,7 +225,8 @@ background-color:white;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
     border-radius: 15px 15px 15px 15px;
     display:flex;
-    margin:2px;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 .bas div
@@ -227,7 +239,8 @@ background-color:white;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
     border-radius: 15px 15px 15px 15px;
     display:flex;
-    margin:2px;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 
@@ -235,9 +248,9 @@ background-color:white;
 {
     display:flex;
     flex-direction:row;
-    align-items:center;
     margin:auto;
-    
+    justify-content:center;
+    height:190px;
 }
 article img
 {
@@ -262,14 +275,14 @@ aside img
 }
 .Gauche
 {
- width:50%;
+ width:100%;
 display:flex;
 }
 
 
 .droite 
 {
-width:50%;
+width:100%;
 display:flex;
 }
 
@@ -281,10 +294,10 @@ display:flex;
     box-shadow: 1px 1px 5px rgb(150, 150, 150);
     
 }
-figure
+.ordre
 {
     width:100%;
-    display:grid;
+    display:flex;
     flex-direction:column;
     grid-area:figure;
 }
@@ -315,7 +328,7 @@ figure
 
 .imagebas
 {grid-area:imagebas;
-max-height:200px;}
+}
 
 .sectionhaut
 {
@@ -338,7 +351,7 @@ section article
     border-radius:15px;
     display:grid;
   grid-template-columns: 1fr ;
-grid-template-rows:  0.2fr 1fr 1fr 0.2fr ;
+grid-template-rows:  0.2fr 0.5fr 0.5fr 0.2fr ;
 grid-template-areas: 
 "h3"
 "   imagehaut"
@@ -366,4 +379,5 @@ footer
     background-color:#F2F2F2 ;
     width:100%;
     grid-area:footer;
+    
 }
