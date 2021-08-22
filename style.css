@@ -75,7 +75,7 @@ border-style:solid;
     flex-direction:row;
     align-items:center;
     margin-top:10px;
-    font-family: 'Raleway','700';
+    font-family: 'Raleway-Bold','sans sherif';
  
 }
 
@@ -200,10 +200,26 @@ h4
 h5
 
 {
-    font-family: Raleway-Thin;
+    font-family: 'Raleway-Regular';
     grid-area:h5;
+    margin-top:8px;
+    margin-left:20px;
+    margin-bottom:2px;
 }
 
+.haut div p
+{
+margin-left:20px;
+margin-top:0px;
+font-family:'Raleway-Regular';
+}
+
+.bas div p
+{
+margin-left:20px;
+margin-top:0px;
+font-family:'Raleway-Regular';
+}
 .haut 
 {
     display:flex;
@@ -221,12 +237,14 @@ h5
 {
 background-color:white;
     
-    padding-bottom:40px;
+    padding-bottom:20px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
     border-radius: 15px 15px 15px 15px;
     display:flex;
     margin-left:20px;
     margin-right:20px;
+    flex-direction:column;
+
 }
 
 .bas div
@@ -241,6 +259,7 @@ background-color:white;
     display:flex;
     margin-left:20px;
     margin-right:20px;
+    flex-direction:column;
 }
 
 
@@ -257,7 +276,6 @@ article img
     width: 250px;
     height: 100px;
     border-radius: 15px 15px 0px 0px;
-    padding-bottom:25px;
     margin-left: 5px;
     margin-right:5px;
     margin-top:5px;
@@ -277,22 +295,83 @@ aside img
 {
  width:100%;
 display:flex;
+height:80%;
+justify-content: center;
+}
+.Gauche .Bulleimages img
+{
+    height:500px;
 }
 
+.Gauche .Bulleimages
+{
+    background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+    margin-bottom:25px;
+    align-items:center;
+    
+}
 
+.droite .Bulleimages
+{
+     background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+    margin-bottom:25px;
+    align-items:center;
+}
+.sectionbas h5
+{
+font-family:'Raleway-Regular';
+margin-right:130px;
+}
+
+.droite .Bulleimages img
+
+{
+ height:500px;
+}
 .droite 
 {
-width:100%;
+
 display:flex;
+margin-left:45px;
+height:80%;
 }
 
-.sectionbas img 
+.sectionbas  img 
 {
-     width: 250px;
-    max-height: 600px;
-    border-radius: 15px;
+     width: 300px;
+    border-radius: 15px 15px 0px 0px;
     box-shadow: 1px 1px 5px rgb(150, 150, 150);
-    
+    height:150px;
+}
+
+#kevin
+{
+ height:100px;
+}
+.ordre .Bulleimages img
+{
+       width: 300px;
+       height:170px;
+    max-height: 200px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 1px 1px 5px rgb(150, 150, 150);
+
 }
 .ordre
 {
@@ -300,15 +379,16 @@ display:flex;
     display:flex;
     flex-direction:column;
     grid-area:figure;
+    justify-content: center;
+    height:100%;
+    margin-left:35px;
 }
- .Grand
+
+.ordre .Marge
 {
-    max-width: 250px;
-    height: 100%;
-    border-radius: 15px 15px 0 0;
-    box-shadow: 1px 1px 5px rgb(150, 150, 150);
-   grid-area:grand;
+    height:10%;
 }
+
 .sectionbas
 {
      display:grid;
@@ -319,8 +399,41 @@ display:flex;
     width:100%;
  
 }
+.Bulle03
+{
+      background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+    margin-bottom:25px;
+    align-items:center; 
+}
 
+.Bulle02
+{
+     background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+ 
+    align-items:center;
+ 
+}
 
+.Bulle02 img
+{
+ height:250px;
+}
 .imagehaut
 {
  grid-area:imagehaut;
@@ -379,5 +492,6 @@ footer
     background-color:#F2F2F2 ;
     width:100%;
     grid-area:footer;
-    
+    display:flex;
+    flex-direction:row;
 }
