@@ -1,3 +1,6 @@
+/*Projet - 2 Reservia de mon cursus scolaire chez OpenClassroom*/
+/*Police*/
+
 @font-face {
     font-family: 'Raleway-Regular';
     src: url('static/Raleway-Regular.ttf');
@@ -15,11 +18,74 @@
     src: url('static/Raleway-Thin.ttf')
 }
 
+/*Général*/
+
+p{
+font-family:'Raleway-regular';
+font-size:small;
+}
+
+h1
+{
+   
+    color:#313131;
+    font-family: 'Raleway', 'Black900';
+    grid-area:h3;
+    margin-top:20px;
+   font-size:x-large;
+   margin-bottom:0px;
+}
+
+h2
+{
+       color:#313131;
+   font-family: 'Raleway', black900;
+    grid-area:h3;
+   margin-bottom:40px;
+   margin-top:31px;
+   
+}
+h6
+{
+margin-left:35px;
+font-family:'Raleway','Bold900';
+Margin-bottom:25px;
+font-size:medium;
+}
+
+h4
+
+{
+    font-family: 'Raleway';
+    grid-area:h5;
+    margin-top:8px;
+    margin-left:20px;
+    margin-bottom:2px;
+}
+
+h5
+{
+    color:black;
+    font-family: 'Raleway', '700';
+    margin-right:20px;
+    font-size:medium;
+}
+
+
+h6
+{
+margin-left:35px;
+font-family:'Raleway','Bold900';
+Margin-bottom:25px;
+font-size:medium;
+}
+
+/*Body*/
 body
 {
     background-color: white;
-    width: 1440px;
-    height: 1884px; 
+    width: 100%;
+    height: 100%; 
     display:grid;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
@@ -28,123 +94,27 @@ body
     ". main main main ."
     ". main main main ."
     ". main main main ."
-    ". footer footer footer . ";
+    "footer footer footer footer footer ";
     margin-bottom:0px;
 
 }
 
-main
-{
-display:flex;
-justify-content: center;
-flex-direction:column;
-grid-area:main;
-height:100%;
-;
-}
-
-button
-{
-    height:50px;
-    width:100px;
-    border-radius: 0 15px 15px 0px;
-    background-color:#0065FC;
-    border-style:none;
-    color:white;
-}
-
-.search
-{
-    display:flex;
-align-content:center;
-align-items:center;
-}
-
-#recherche
-{
-    
-  height:50px;
-border-color:rgb(224, 224, 224);
-border-style:solid;
-
-}
-
-.filtres
-{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    margin-top:10px;
-    font-family: 'Raleway-Bold','sans sherif';
- 
-}
-
-.iconfiltre
-{
-    border: 2px solid #f2f2f2;
-    margin-right:20px;
-    height:50px;
-    display:flex;
-    align-items:center;
-     border-radius:30px;
-   
-}
-
-.iconfiltre p
-{
-    
-   
-    padding:12px;
-    padding-left:2px;
-    border-color:#D9D9D9;
-}
-
-.iconfiltre i
-{
-background-color:#DEEBFF;
-padding:18px;
-border-radius:50%;
-color:blue;
-     
-}
-
-.iconfiltre i:hover
-{
-   
-background-color:blue;
-padding:18px;
-border-radius:50%;
-color:#DEEBFF; 
-}
-
-.search i
-{
- height:15px;
- width:15px;
- Padding:17.5px;
- background-color:rgb(224, 224, 224);
- border-radius: 15px 0px 0px 15px;
-
-}
-
-.icon
-{
-    height:50px;
-    width:50px;
-}
-
-
+/*Header */
 header
 {
 grid-area:header;
 width:100%;
 font-family: 'Raleway', '300';
-}s
+}
+/*Nav*/
+
+/*Logo*/
 nav img
 {
 padding-top:18px;
 }
 
+/*Lien de navigation */
 nav a 
 {
     Float:right;
@@ -153,6 +123,7 @@ nav a
     color:gray;
 }
 
+/* Effet au passement de la souris*/
 nav a:hover
 {
     border-top:solid;
@@ -173,275 +144,172 @@ nav a:active
     color:#0065FC;
 }
 
-#titreart
-{
-     margin-left:40px;
-     margin-top:40px;
-     margin-bottom:2px;
-}
+/*Filtres */
 
-
-h3 
-{
-   
-    color:#313131;
-    font-family: 'Raleway', '900';
-    grid-area:h3;
-    margin-top:20px;
-   
-}
-
-h4
-{
-    color:black;
-    font-family: 'Raleway', '700';
-    margin-right:20px;
-}
-h5
-
-{
-    font-family: 'Raleway-Regular';
-    grid-area:h5;
-    margin-top:8px;
-    margin-left:20px;
-    margin-bottom:2px;
-}
-
-.haut div p
-{
-margin-left:20px;
-margin-top:0px;
-font-family:'Raleway-Regular';
-}
-
-.bas div p
-{
-margin-left:20px;
-margin-top:0px;
-font-family:'Raleway-Regular';
-}
-.haut 
+.filtres
 {
     display:flex;
     flex-direction:row;
-    height:190px;
-    margin-top:20px;
-    justify-content: center;
+    align-items:center;
+    margin-top:10px;
+    font-family: 'Raleway-Bold','sans sherif';
+ 
 }
 
-.titregras
+/*Bordure et alignement */
+.iconfiltre 
 {
-    margin-left:20xp;
-}
-.haut div
-{
-background-color:white;
-    
-    padding-bottom:20px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
-    display:flex;
-    margin-left:20px;
+    border: 2px solid #f2f2f2;
     margin-right:20px;
-    flex-direction:column;
-
-}
-
-.bas div
-{
-  
-
-    background-color:white;
-    
-    padding-bottom:40px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    height:50px;
     display:flex;
-    margin-left:20px;
-    margin-right:20px;
-    flex-direction:column;
+    align-items:center;
+     border-radius:30px;
+   
 }
 
-
-.bas
+/* Marge  et bordure à l'interieur de la bulle */
+.iconfiltre p
 {
-    display:flex;
-    flex-direction:row;
-    margin:auto;
-    justify-content:center;
-    height:190px;
-}
-article img
-{
-    width: 250px;
-    height: 100px;
-    border-radius: 15px 15px 0px 0px;
-    margin-left: 5px;
-    margin-right:5px;
-    margin-top:5px;
-}
-
-aside img
-{
-    width: 250px;
-    max-height: 200px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    margin:auto;
-    grid-area:aside;
     
+
+    font-family:'Raleway','600';
+    padding:12px;
+    padding-left:2px;
+    border-color:#D9D9D9;
 }
-.Gauche
+
+
+/*Icon */
+.iconfiltre i
 {
- width:100%;
+background-color:#DEEBFF;
+height:50px;
+width:50px;
+border-radius:50%;
+color:blue;
 display:flex;
-height:80%;
+align-items:center;
 justify-content: center;
 }
-.Gauche .Bulleimages img
-{
-    height:500px;
-}
 
-.Gauche .Bulleimages
+.iconfiltre i:hover   
 {
-    background-color:white;
-    
-    padding-bottom:40px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+   
+background-color:blue;
+padding:2px;
+border-radius:50%;
+color:#DEEBFF; 
+border-color:white;
+border-style:solid 1px;
+}
+.iconfiltre:hover
+{
+      border: 2px solid blue;
+    margin-right:20px;
+    height:50px;
     display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    flex-direction:column;
-    margin-bottom:25px;
     align-items:center;
-    
+     border-radius:30px;
+     background-color:rgb(128, 158, 255);
+    color:white;
 }
 
-.droite .Bulleimages
-{
-     background-color:white;
-    
-    padding-bottom:40px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
-    display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    flex-direction:column;
-    margin-bottom:25px;
-    align-items:center;
-}
-.sectionbas h5
-{
-font-family:'Raleway-Regular';
-margin-right:130px;
-}
 
-.droite .Bulleimages img
 
+
+.icon
 {
- height:500px;
+    height:50px;
+    width:50px;
 }
-.droite 
-{
+/*Main*/
 
+main
+{
 display:flex;
-margin-left:45px;
-height:80%;
+justify-content: center;
+flex-direction:column;
+grid-area:main;
+height:100%;
 }
 
-.sectionbas  img 
+/*Bouton recherche*/
+button
 {
-     width: 300px;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 1px 1px 5px rgb(150, 150, 150);
-    height:150px;
+    height:50px;
+    width:100px;
+    border-radius: 0 15px 15px 0px;
+    background-color:#0065FC;
+    border-style:none;
+    color:white;
 }
 
-#kevin
+.search
 {
- height:100px;
-}
-.ordre .Bulleimages img
-{
-       width: 300px;
-       height:170px;
-    max-height: 200px;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 1px 1px 5px rgb(150, 150, 150);
-
-}
-.ordre
-{
-    width:100%;
     display:flex;
-    flex-direction:column;
-    grid-area:figure;
-    justify-content: center;
-    height:100%;
-    margin-left:35px;
+align-content:center;
+align-items:center;
 }
 
-.ordre .Marge
+.search i
 {
-    height:10%;
-}
+ height:15px;
+ width:15px;
+ Padding:17.5px;
+ background-color:rgb(224, 224, 224);
+ border-radius: 15px 0px 0px 15px;
 
-.sectionbas
-{
-     display:grid;
-     grid-area: 2section;
-    grid-template-columns: repeat(2 ,1fr);
-    grid-template-areas:"grand figure grand figure";
-    height:50%;
-    width:100%;
- 
 }
-.Bulle03
+#recherche
 {
-      background-color:white;
     
-    padding-bottom:40px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
-    display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    flex-direction:column;
-    margin-bottom:25px;
-    align-items:center; 
+  height:50px;
+border-color:rgb(224, 224, 224);
+border-style:solid;
+
 }
 
-.Bulle02
+/*partie info*/
+.info
 {
-     background-color:white;
-    
-    padding-bottom:40px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+display:flex;
+align-items:center;
+margin-top:25px;
+margin-bottom:25px;
+}
+
+.info i
+{
+  
+    color:blue;
+    border-color:#F2F2F2;
+    border-style:solid;
+    border-radius:60px;
+    height:26px;
     display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    flex-direction:column;
- 
     align-items:center;
- 
+    width:26px;
+    justify-content: center;
+    margin-right:10px;
 }
 
-.Bulle02 img
+/*icon étoile*/
+
+.étoile
 {
- height:250px;
-}
-.imagehaut
-{
- grid-area:imagehaut;
+    margin-left:20px;
+
 }
 
-.imagebas
-{grid-area:imagebas;
+.étoile i
+{
+    Color:blue;
+    margin-left:2px;
 }
+
+/* Section haut */
+
 
 .sectionhaut
 {
@@ -452,6 +320,14 @@ width:100%;
 margin-top:5px;
 height:50%;
 grid-area:section;
+}
+
+/*L'article de la section*/
+#titreart
+{
+     margin-left:40px;
+     margin-top:40px;
+     margin-bottom:2px;
 }
 
 section article 
@@ -473,6 +349,48 @@ grid-template-areas:
 flex-grow:2;
 }
 
+.more
+{
+    height:50%;
+    margin-left:50px;
+}
+
+/*image de l'article*/
+
+.haut div
+{
+background-color:white;
+    
+    padding-bottom:20px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    margin-left:20px;
+    margin-right:20px;
+    flex-direction:column;
+
+}
+
+.imagehaut
+{
+ grid-area:imagehaut;
+}
+
+.imagebas
+{grid-area:imagebas;
+}
+
+article img
+{
+    width: 250px;
+    height: 100px;
+    border-radius: 24px 24px 0px 0px;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-top:5px;
+}
+/*Aside*/
+
 section aside
 {
     grid-area:aside;
@@ -486,7 +404,290 @@ section aside
    
 }
 
+aside div
+{
+ background-color:white;
+    width:300px;
+    
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+  
+    margin-top:25px;
+    margin-bottom:25px;
+    align-items:center;
+    height:120px;
+    
+}
 
+.Asidetextcontent
+{
+    display:flex;
+    flex-direction:column;
+    padding-bottom:35px;
+    margin-top:0px;
+}
+
+.Asidetextcontent p
+{
+    Margin-top:0px;
+    margin-left:20px;
+    margin-bottom:10px;
+}
+aside img
+{
+    width: 140px;
+    height: 108px;
+    border-radius: 20px 0px 0px 20px;
+    display:flex;
+    grid-area:aside;
+    margin-left:5px;
+    
+}
+
+
+
+.haut 
+{
+    display:flex;
+    flex-direction:row;
+    height:190px;
+    margin-top:20px;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.bas div
+{
+  
+
+    background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    margin-left:20px;
+    margin-right:20px;
+    flex-direction:column;
+}
+
+
+.bas
+{
+    display:flex;
+    flex-direction:row;
+    margin:auto;
+    justify-content:center;
+    height:190px;
+}
+
+
+
+/*marge des texte*/
+
+.haut div p
+{
+margin-left:20px;
+margin-top:0px;
+
+margin-bottom:0px;
+}
+
+.bas div p
+{
+margin-left:20px;
+margin-top:0px;
+margin-bottom:0px;
+}
+
+/*Section Basse */
+/*Disposition de la section basse*/
+.sectionbas
+{
+     display:grid;
+     grid-area: 2section;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-areas:"grand figure grand figure";
+    height:50%;
+    width:100%;
+ 
+}
+.ordre
+{
+
+    display:flex;
+    flex-direction:column;
+    grid-area:figure;
+    justify-content: center;
+    height:100%;
+    margin-left:30px;
+}
+
+.ordre .Bulleimages img
+{
+       width: 290px;
+       height:170px;
+    max-height: 200px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 1px 1px 5px rgb(150, 150, 150);
+
+}
+
+.ordre .Marge
+{
+    height:10%;
+}
+
+
+/*Police du Titre*/
+/*Marge du titre*/
+.sectionbas h5
+{
+font-family:'Raleway-Regular';
+margin-right:130px;
+}
+
+
+/*Image de la section basse */
+/*Largeur des image de la section basse*/
+.sectionbas  img 
+{
+     width: 290px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 1px 1px 5px rgb(150, 150, 150);
+    height:150px;
+}
+
+/* Coté Gauche de la section basse*/
+/*La section basse est scindé en 2 partie contenant 3 élement chacune */
+
+/*Disposition de l'element*/
+.Gauche
+{
+ width:100%;
+display:flex;
+height:80%;
+justify-content: center;
+}
+
+/* Bulle*/
+.Gauche .Bulleimages
+{
+    background-color:white;
+    width:290px;
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+  
+ 
+    flex-direction:column;
+    
+}
+
+.Bulle03
+{
+      background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+}
+
+
+
+.Bulle02
+{
+     background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+}
+
+
+
+/* hauteur de l'image coté gauche*/
+.Gauche .Bulleimages img
+{
+    height:500px;
+}
+
+
+.Bulle02 img
+{
+ height:250px;
+}
+
+
+#kevin
+{
+ height:100px;
+}
+
+/*Coté droite de la section basse*/
+
+.droite 
+{
+
+display:flex;
+margin-left:12px;
+height:80%;
+}
+
+/*Bulle */
+
+.droite .Bulleimages
+{
+     background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    width:290px;
+  
+    flex-direction:column;
+
+}
+
+
+.BulleG
+{
+    background-color:white;
+    width:290px;
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 15px 15px 15px 15px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+  
+    
+}
+
+
+
+/*Image du coté droit*/
+
+
+.droite .BulleG img
+
+{
+ height:500px;
+}
+
+/* Footer */
 footer
 {
     background-color:#F2F2F2 ;
@@ -494,4 +695,69 @@ footer
     grid-area:footer;
     display:flex;
     flex-direction:row;
+    height:100%;
+    justify-content: space-around;
 }
+
+/*Style code rubrique a propos*/
+
+.Apropos a
+
+{
+    text-decoration:none;
+    color:black;
+    font-family:'Raleway';
+}
+
+.Apropos ul
+{
+    list-style-type:none;
+    
+}
+
+.Apropos li
+{
+    height:30px;
+}
+
+/*Style code nos hébergement */
+
+.Noshébergement a
+
+{
+    text-decoration:none;
+    color:black;
+    font-family:'Raleway';
+}
+
+.Noshébergement ul
+{
+    list-style-type:none;
+}
+
+.Noshébergement li
+{
+    height:30px;
+}
+
+/* Style code rubrique Assistance*/
+
+.Assistance a
+
+{
+    text-decoration:none;
+    color:black;
+    font-family:'Raleway';
+}
+
+.Assistance ul
+{
+    list-style-type:none;
+}
+
+.Assistance li
+{
+    height:30px;
+}
+/*Fin du code Css*/
+/*Codé crée par Itooma Ronny*/
