@@ -1,4 +1,144 @@
 /*Projet - 2 Reservia de mon cursus scolaire chez OpenClassroom*/
+/*Responsive design*/
+@media screen and (max-device-width: 1024px)
+{
+
+    p
+    {
+        font-size:1.5em;
+    }
+
+    #body
+    {
+        
+        Display:flex;
+        flex-direction:column;
+        background-color:white;
+    }
+
+    #header
+    {
+        width:auto;
+    }
+    #main
+    {
+        width:auto;
+        display:flex;
+    
+    }
+    
+    #Hébergements
+    {
+        width:auto;
+        flex-direction:column;
+        display:flex;
+        justify-content: center;
+    }
+    aside
+    {
+        display:flex;
+        margin-left:0px;
+        width:auto;
+        flex-direction:column;
+    }
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.5em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+    p
+    {font-size:10px;}
+
+    .haut
+    {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .bas
+    {
+    
+        display:flex;
+        flex-direction:column;
+    }
+    #Activités article
+    {
+        display:flex;
+        flex-direction:column;
+        width:auto;
+    }
+
+    #Activités img
+    {
+        min-width:400px;
+        min-height:200px;
+        max-height:300px;
+        max-width:600px;
+    }
+
+    #Activités 
+    {
+        flex-direction:column;
+        display:flex;
+    }
+
+    .Gauche
+    {
+        flex-direction:column;
+        align-items:center;
+        
+    }
+
+    .Gauche #Bulleg
+    {
+        max-width:400px;
+    }
+    .droite
+    {
+        flex-direction:column;
+    }
+
+#ordreg
+{
+    margin-left:0px;
+}
+
+
+
+#ordred
+{
+    margin-left:0px;
+    align-items:center;
+}
+  
+.BulleG
+{
+    min-width:400px;
+}
+}
+
+
+
 /*Police*/
 
 @font-face {
@@ -505,29 +645,28 @@ margin-bottom:0px;
 /*Disposition de la section basse*/
 .sectionbas
 {
-     display:grid;
-     grid-area: 2section;
-    grid-template-columns: repeat(2 ,1fr);
-    grid-template-areas:"grand figure grand figure";
+     display:flex;
     height:50%;
     width:100%;
+    flex-direction:row;
+    justify-content:space-between;
  
 }
+
+
 .ordre
 {
 
     display:flex;
     flex-direction:column;
     grid-area:figure;
-    justify-content: center;
-    height:100%;
-    margin-left:30px;
+    align-items:center;
 }
 
 .ordre .Bulleimages img
 {
        width: 290px;
-       height:170px;
+       height:150px;
     max-height: 200px;
     border-radius: 15px 15px 0px 0px;
     box-shadow: 1px 1px 5px rgb(150, 150, 150);
@@ -536,7 +675,7 @@ margin-bottom:0px;
 
 .ordre .Marge
 {
-    height:10%;
+    margin-top:25px;
 }
 
 
@@ -553,50 +692,32 @@ margin-right:130px;
 /*Largeur des image de la section basse*/
 .sectionbas  img 
 {
-     width: 290px;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 1px 1px 5px rgb(150, 150, 150);
-    height:150px;
+    min-width: 290px;
+    border-radius: 25px 25px 0px 0px;
+    max-height:150px;
 }
 
 /* Coté Gauche de la section basse*/
 /*La section basse est scindé en 2 partie contenant 3 élement chacune */
 
 /*Disposition de l'element*/
-.Gauche
-{
- width:100%;
-display:flex;
-height:80%;
-justify-content: center;
-}
+
 
 /* Bulle*/
-.Gauche .Bulleimages
-{
-    background-color:white;
-    width:290px;
-    padding-bottom:40px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
-    display:flex;
-  
- 
-    flex-direction:column;
-    
-}
+
 
 .Bulle03
 {
       background-color:white;
     
-    padding-bottom:40px;
+    padding-bottom:10px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
     margin-left:auto;
     margin-right:auto;
     flex-direction:column;
+    margin-bottom:50px;
 }
 
 
@@ -605,9 +726,9 @@ justify-content: center;
 {
      background-color:white;
     
-    padding-bottom:40px;
+    padding-bottom:10px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
     margin-left:auto;
     margin-right:auto;
@@ -619,13 +740,14 @@ justify-content: center;
 /* hauteur de l'image coté gauche*/
 .Gauche .Bulleimages img
 {
-    height:500px;
+    min-height:365px;
+    max-height:500px;
 }
 
 
 .Bulle02 img
 {
- height:250px;
+ max-height:200px;
 }
 
 
@@ -636,23 +758,17 @@ justify-content: center;
 
 /*Coté droite de la section basse*/
 
-.droite 
-{
 
-display:flex;
-margin-left:12px;
-height:80%;
-}
 
 /*Bulle */
 
-.droite .Bulleimages
+.Bulleimages
 {
      background-color:white;
     
-    padding-bottom:40px;
+    padding-bottom:10px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
     width:290px;
   
@@ -661,18 +777,32 @@ height:80%;
 }
 
 
-.BulleG
+.Bulle01
+{
+     background-color:white;
+    
+    padding-bottom:10px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    width:290px;
+    height:80%;
+    padding-bottom:40px;
+    flex-direction:column;
+}
+
+
+
+.Bulle04
 {
     background-color:white;
-    width:290px;
+    max-width:290px;
     padding-bottom:40px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
-    margin-left:auto;
-    margin-right:auto;
     flex-direction:column;
-  
+    height:80%;
     
 }
 
@@ -681,10 +811,17 @@ height:80%;
 /*Image du coté droit*/
 
 
-.droite .BulleG img
+.Bulle01 img
 
 {
- height:500px;
+ max-height: 500px;
+min-height: 365px;
+}
+
+.Bulle04 img
+{
+max-height: 500px;
+min-height: 365px;
 }
 
 /* Footer */
@@ -697,6 +834,7 @@ footer
     flex-direction:row;
     height:100%;
     justify-content: space-around;
+    
 }
 
 /*Style code rubrique a propos*/
