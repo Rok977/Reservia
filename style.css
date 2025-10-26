@@ -1,17 +1,17 @@
 /*Projet - 2 Reservia de mon cursus scolaire chez OpenClassroom*/
 /*Responsive design*/
-@media screen and (max-device-width: 1024px)
+@media screen and (max-width: 1024px)
 {
 
     p
     {
-        font-size:2.0em;
+        font-size: 1rem;
     }
 
     #body
     {
-        
-        Display:flex;
+
+        display:flex;
         flex-direction:column;
         background-color:white;
     }
@@ -19,8 +19,8 @@
     #header
     {
         width:auto;
-        padding-left: 3.3vw;
-        padding-right: 3.3vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     #header img 
@@ -29,36 +29,36 @@
     }
     #main
     {
-        width:100vw;
+        width:100%;
         display:flex;
-        padding:3.3vw;
-        
-    
+        padding:1.5rem;
+
+
     }
 
     #recherche
     {
-        height: 10vw;
-        width: 70vw;
-        font-size: 2.3em;
+        height: 3.5rem;
+        width: 100%;
+        font-size: 1.2rem;
         font-weight: bold;
 
     }
 
     #contentsearch i
     {
-        Padding: 3.4vw;
+        padding: 1rem;
         align-self: center;
-        font-size: 2.3em;
+        font-size: 1.3rem;
         height:auto;
         width:auto;
     }
 
     #mobilebutton
     {
-        height:10vw;
-width: 25vw;
-font-size: 2.3em;
+        height: 3.5rem;
+        width: auto;
+        font-size: 1.2rem;
     }
     #filtres
     {
@@ -94,7 +94,7 @@ font-size: 2.3em;
     
     #Hébergements
     {
-        width:100vw;
+        width:100%;
         flex-direction:column-reverse;
         display:flex;
         justify-content: center;
@@ -118,7 +118,7 @@ min-width: 98.9%;
     {
         display:flex;
         margin-left:unset;
-        width:100vw;
+        width:100%;
         flex-direction:column;
         padding:unset;
 
@@ -135,7 +135,7 @@ min-width: 98.9%;
         align-self:center;
         align-self: end;
         justify-self: end;
-        padding-top: 6vw;
+        padding-top: 2rem;
         text-align: end;
         padding-right: unset;
         padding-left:unset;
@@ -158,46 +158,47 @@ min-width: 98.9%;
     }
     #filtres i
     {
-        height:10vw;
-        width:10vw;
-        font-size:2.5em;
+        height:3.5rem;
+        width:3.5rem;
+        font-size:1.3rem;
     }
     #filtres .iconfiltre
     {
-        height:8vw;
+        height:3rem;
     }
 
     #aside div
     {
-         min-width:400px;
-    
-         min-height:300px;
+         min-width:unset;
+
+         min-height:unset;
 
          margin-top:unset;
          margin-bottom:5%;
+         width:100%;
     }
 
-    #aside div img 
+    #aside div img
     {
-        min-width:38vw;
- 
-        min-height:38vw;
+        width:100%;
+
+        height:auto;
         margin-left:unset;
-        padding:1vw;
-      
+        padding:0.5rem;
+
     }
 
     #aside i
     {
-        font-size:2.0em;
+        font-size:1.3rem;
     }
     #haut i
     {
-        font-size:2.0em;
+        font-size:1.3rem;
     }
     #nav
     {
-        width:100vw;
+        width:100%;
         display:grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr ;
@@ -210,7 +211,8 @@ min-width: 98.9%;
     
     #nav img
     {
-     min-width:35vw;
+     min-width:unset;
+     max-width:200px;
      grid-area:img;
      align-self: center;
      padding-top: unset;
@@ -225,7 +227,7 @@ min-width: 98.9%;
     
     #nav a
     {
-        font-size: 3.5em;
+        font-size: 1.2rem;
           color:#0065FC;
     }
     
@@ -237,7 +239,7 @@ min-width: 98.9%;
       
     }
     p
-    {font-size:10px;}
+    {font-size:0.9rem;}
 
     #haut
     {
@@ -245,16 +247,16 @@ min-width: 98.9%;
         flex-direction:column;
         height:auto;
         margin-bottom:unset;
-        width:100vw;
+        width:100%;
     }
     #haut div
     {
-       
-        min-height:400px;
+
+        min-height:unset;
         margin-bottom:5%;
         margin-left:unset;
         margin-right:unset;
-     
+
     }
     #titreart
     {
@@ -262,25 +264,25 @@ min-width: 98.9%;
     }
     #bas
     {
-    
+
         display:flex;
         flex-direction:column;
         height:auto;
         margin:unset;
-        width:100vw;
+        width:100%;
     }
     #bas i
     {
-        font-size:2.0em;
+        font-size:1.3rem;
     }
     #bas div
     {
-        min-width: 400px;
+        min-width: unset;
         max-width: 100%;
         margin-bottom:5%;
         margin-left:unset;
         margin-right:unset;
-           
+
     }
     #Activités article
     {
@@ -291,17 +293,17 @@ min-width: 98.9%;
 
     #Activités img
     {
-max-height: 40vw;
-min-height: 30vw;
-min-width: 100vw;
-height: unset;
+max-height: none;
+min-height: unset;
+width: 100%;
+height: auto;
     }
 
-    #Activités 
+    #Activités
     {
         flex-direction:column;
         display:flex;
-        width:100vw;
+        width:100%;
     }
     .Gauche #Bulleg
     {
@@ -317,27 +319,27 @@ height: unset;
 
 #ordred
 {
-   width: 100vw;
+   width: 100%;
 }
   
 #Bulleg
 {
-    min-width:100vw;
-    max-width:100vw;
+    min-width:100%;
+    max-width:100%;
 
 }
 
 #Bulle04
 {
-    
 
-    min-width:100vw;
+
+    min-width:100%;
 }
 
 #Bulle02
 {
- 
-min-width: 100vw;
+
+min-width: 100%;
 }
 #Bulle03
 {
@@ -347,65 +349,65 @@ min-width: 100vw;
 }
 #Bulleimages
 {
-     
-    min-width:100vw;
+
+    min-width:100%;
 }
 #Bulleimages02
 {
 
-    min-width:100vw;
+    min-width:100%;
 }
 
 #footer
 {
     flex-direction:column;
-    width:105vw;
+    width:100%;
 }
 .Mobilesize
 {
-    font-size: 2.5em;
+    font-size: 1.2rem;
 }
 
 #h1
 {
-    font-size:3.5em;
+    font-size:1.8rem;
 }
 
 #h5
 {
-    font-size: 2.5em;
+    font-size: 1.2rem;
     grid-area: titre;
     margin-bottom:2vw;
 }
 
 #h3
 {
-    font-size:2.3em;
+    font-size:1.3rem;
 }
 
 .titresizemobile
 {
-    font-size: 3.5em;
+    font-size: 1.5rem;
 }
 .H4mobile
 {
-    font-size:3.0em;
+    font-size:1.3rem;
 }
 
 #footer h6
 {
-    font-size:3.0em
+    font-size:1.2rem
 }
 
 #footer a
 
 {
-    font-size:2.5em;
+    font-size:1rem;
 }
 
 #footer li
 {
-    margin-bottom:4vw;
+    margin-bottom:2rem;
 }
 }
 
